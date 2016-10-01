@@ -1,9 +1,24 @@
+# Showtime
+
+### 1. get dependencies
+
+    npm install
+
+### 2. run static server
+
+    npm start
+
+### 3. view in browser
+
+    http://localhost:8080
+
 # Plan
 
 * Intro
 * The problem
   * We live in a mobile world now
   * Modules
+    * Fig: dependency tree
   * Bundling and lazy loading
   * Lazy vs eager: the two extremes
   * RTT vs parsing
