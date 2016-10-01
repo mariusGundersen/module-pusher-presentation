@@ -1,13 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=1024, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Efficient module loading</title>
-</head>
-<body>
-  <h1>Efficent module loading</h1>
-</body>
+    <title>Efficient module loading</title>
+
+    <link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="/css/atom-one-dark.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Efficient module loading</h2>
+          <h4>Marius Gundersen 2016</h4>
+        </section>
+        <section>
+          <pre><code class="javascript" data-trim data-noescape>
+import something from 'library.js';
+
+export default function(a, b){
+  return something(a) + something(b);
+}
+          </code></pre>
+          </section>
+      </div>
+    </div>
+    <script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+    <script src="node_modules/reveal.js/js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        dependencies: [
+          { src: 'node_modules/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        ]
+      });
+    </script>
+  </body>
 </html>
