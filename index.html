@@ -15,9 +15,50 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <h2>Efficient module loading</h2>
-          <h4>Marius Gundersen 2016</h4>
+          <section>
+            <h2>Efficient module loading</h2>
+            <h4>Marius Gundersen 2016</h4>
+          </section>
+
+          <section>
+            <h2>Marius Gundersen</h2>
+            <img src="/img/clave.svg" class="fragment current-visible plain" style="background: none;" />
+          </section>
+
+          <section>
+            <h2>Komplett.no</h2>
+            <img src="/img/komplett_screenshot.png" class="plain" style="background: none;" />
+          </section>
+
+          <section>
+            <h2>Requirements in 2016</h2>
+            <ul>
+              <li>Load quickly
+              <li>Work on mobile devices
+            </ul>
+          </section>
+
+          <section>
+            <h2>Load quickly when we have:</h2>
+            <ul>
+              <li class="fragment">Low bandwith
+              <li class="fragment">Little RAM
+              <li class="fragment">Limited CPU
+              <li class="fragment">Small battery
+            </ul>
+          </section>
         </section>
+
+        <section>
+          <section>
+            <h2>Modern JavaScript: modules</h2>
+            <ul>
+              <li class="fragment">Many files
+              <li class="fragment">Dependencies between files
+            </ul>
+          </section>
+        </section>
+
         <section>
           <pre><code class="javascript" data-trim data-noescape>
 import something from 'library.js';

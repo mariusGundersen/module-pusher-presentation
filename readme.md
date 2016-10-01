@@ -3,6 +3,7 @@
 * Intro
 * The problem
   * We live in a mobile world now
+  * Modules
   * Bundling and lazy loading
   * Lazy vs eager: the two extremes
   * RTT vs parsing
